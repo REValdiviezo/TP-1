@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulario</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-nqZa9yOiv50PdoyyA2PryRZSR/Rcr7b4Lw/aLnxE2z9LkWuBSAq6po09Y++R+2FQ/zmf6GpFxK0ieP9bTK5iJA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="bg-black">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <img
+              src="https://www.justiciajujuy.gov.ar/wp-content/uploads/elementor/thumbs/roundcube_logo-per0yuvdys7nzd44vdm95njip7apvxomow5drrhpis.png"
+              alt=""
+            />
+            <ul class="navbar-nav mx-auto">
+              <li>
+                <a class="nav-link text-white font-nav" href="./index.html">
+                  INICIO
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white font-nav"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  INSTITUCIONAL
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item fs-6" href="#"
+                      >Autoridades de la Suprema Corte de justicia</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-6" href="#">Guía Judicial</a>
+                  </li>
+                  <li><a class="dropdown-item fs-6" href="#">Conjueces</a></li>
+                  <li>
+                    <a class="dropdown-item fs-6" href="#">Memoria Anual</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-6" href="#">Sedes Judiciales</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle fs-6"
+                      href="#"
+                      role="button"
+                      aria-expanded="false"
+                    >
+                      Distribucion Geografica
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-6" href="#"
+                      >Primera Versión del Sitio</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="nav-link text-white font-nav" href="./form.html">
+                  FORMULARIO
+                </a>
+              </li>
+              <li>
+                <a class="nav-link text-white font-nav" href="./noticias.html">
+                  NOTICIAS
+                </a>
+              </li>
+              <li>
+                <a class="nav-link text-white font-nav" href="./blog.html">
+                  BLOG
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white font-nav"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SERVICIOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <form method="post" class="text-white d-flex flex-column text-center rounded-4 mt-5 position-relative align-items-center">
+        <div class="background-blur position-absolute"></div>
+        <h2 class="mb-4">CONTACTO</h2>
+        <label>Apellido</label>
+        <input type="text" required/>
+    
+        <label>Nombre</label>
+        <input type="text" required/>
+    
+        <label>Tipo/Numero</label>
+        <select name="" id="">
+          <option value="">DNI</option>
+          <option value="">Pasaporte</option>
+          <option value="">Cedula</option>
+        </select>
+        <input type="text" required/>
+    
+        <label>Fecha de Nacimiento</label>
+        <input type="date" required/>
+    
+        <label>N° CUIT</label>
+        <input type="number" required/>
+    
+        <label>Domicilio</label>
+        <input type="text" required/>
+    
+        <label>Telefono</label>
+        <input type="number" required/>
+    
+        <label>E-mail</label>
+        <input type="email" required/>
+    
+        <label>Experiencia</label>
+        <label>SI</label>
+        <input type="radio" required/>
+        <label>NO</label>
+        <input type="radio" required/>
+    
+        <label>Disponibilidad</label>
+        <input type="range" required/>
+    
+        <label>Mensaje</label>
+        <textarea placeholder="Escribe algo"></textarea>
+
+        <button class="btn-form my-3 rounded-3 text-white py-1 fs-5">Enviar</button>
+    </form>
+  </body>
+</html>
